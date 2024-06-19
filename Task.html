@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TIC-TAC-TOE</title>
+   
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=poppins:wght@300;400;500;600;700;800;900&display=swap">
+   <style>
+    *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Raleway",sans-serif;
+}
+body{
+    height: 100vh;
+    background: linear-gradient(135deg,rgb(13, 21, 45),rgb(32, 92, 32));
+}
+html{
+    font-size: 16px;
+}
+.wrapper{
+    position: absolute;
+    transform: translate(-50%,-50%);
+    top: 50%;
+    left: 50%;
+}
+.container{
+    width: 70vmin;
+    height: 70vmin;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2vmin;
+}
+.button-option{
+    background: #dedbe9;
+    height: 22vmin;
+    width: 22vmin;
+    border: none;
+    border-radius: 8px;
+    font-size: 12vmin;
+    color: rgb(13, 21, 45);
+    box-shadow: 0 0 15px rgba(0,0,0,0.1);
+}
+#restart{
+    font-size: 1.3rem;
+    padding: 1rem;
+    border-radius: 8px;
+    background-color: #d3cbeb;
+    color: rgb(13, 21, 45);
+    border: none;
+    position: relative;
+    margin: 1.5rem auto 0 auto;
+    display: block;
+}
+#popup{
+    background: linear-gradient(135deg,rgb(13, 21, 45),rgb(32, 92, 32));
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1rem;
+    font-size: 12vmin;
+    
+}
+#message{
+    color:#ffffff;
+    text-align: center;
+    font-size: 40px;
+}
+   </style>
+</head>
+<body>
+      
+    <div class="wrapper">
+        
+
+        <div class="container">
+           
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+            <button class="button-option"></button>
+        </div>
+        <button id="restart">Restart</button>
+        <div  id=" popup hide">
+            <p  id="message">Sample Message</p>
+           
+      </div>
+   </div>
+    <script src="./Task.js">
+        
+
+
+
+    </script>
+</body>
+</html>
